@@ -9,7 +9,7 @@
 - `apt-get install --no-install-recommends --no-install-suggests`
 - Keep no data in the container!
 
-
+```
 +Docker daemon logs: /var/log/syslog
 ?debconf configuration?
 +image normalization apt-mark auto, blacklist: init (sysv, systemd) <features from debian-image-normalize.sh
@@ -36,22 +36,27 @@
 +cli tools from another image
 -delete unnecessary files
 -dpkg-query --showformat='${Installed-size}\t${Package}\n' --show | sort -n
+```
 
 ### Apps
 
 configuration, data files, logs
 
+```
 +Apache 2.4 with HTTP/2 and event MPM
 +PHP-FPM 7.4
 +Redis in-memory cache
 +MariaDB 10 or Percona Server 5.7
 +WordPress
 +Laravel
+```
 
 ### Delete unnecessary files
 
+```bash
 apt-get clean
 rm -r /var/lib/apt/lists/*
 rm -r /usr/share/locale/[a-z][a-z]*
 rm -r /usr/share/man/[a-z][a-z]*
 rm /var/log/dpkg.log /var/log/bootstrap.log /var/log/alternatives.log /var/cache/ldconfig/aux-cache
+```
