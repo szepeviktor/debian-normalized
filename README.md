@@ -2,7 +2,7 @@
 
 1. Created with `debootstrap` command
 2. Normalized
-3. All features from my `debian-stup.sh` in an image
+3. All features from my [`debian-setup.sh`](https://github.com/szepeviktor/debian-server-tools/blob/master/debian-setup/debian-setup.sh) in an image
 
 
 - Official Debian images: https://github.com/debuerreotype/debuerreotype
