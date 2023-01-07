@@ -1,13 +1,19 @@
 # Preparing my very first normalized Debian Docker image
 
-1. Created with `debootstrap` command
-2. Normalized
+🚧 This is thinking and experimenting. Please contribute and help me make decisions! 🚧
+
+So many Debian images are so complex and far away from safety and security of `debootstrap`-generated files.
+
+1. Created with `debootstrap` command - So clean 🤩 so lovely 🤩
+2. Normalized - even Debian base system has problems
 3. All features from my [`debian-setup.sh`](https://github.com/szepeviktor/debian-server-tools/blob/master/debian-setup/debian-setup.sh) in an image
 
 
 - Official Debian images: https://github.com/debuerreotype/debuerreotype
 - `apt-get install --no-install-recommends --no-install-suggests`
 - Keep no data in the container!
+
+### Parts of the base image
 
 ```
 +Docker daemon logs: /var/log/syslog
@@ -35,7 +41,7 @@
 ?monit ?
 +cli tools from another image
 -delete unnecessary files
--dpkg-query --showformat='${Installed-size}\t${Package}\n' --show | sort -n
+-dpkg-query --showformat='${Installed-size}\t${Package}\n' --show | sort --numeric-sort
 ```
 
 ### Apps
