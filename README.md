@@ -41,8 +41,12 @@ So many Debian images are so complex and far away from safety and security of `d
 ?monit ?
 +cli tools from another image
 -delete unnecessary files
--dpkg-query --showformat='${Installed-size}\t${Package}\n' --show | sort --numeric-sort
 ```
+
+### Inspect image
+
+- List package sizes `dpkg-query --showformat='${Installed-size}\t${Package}\n' --show | sort --numeric-sort`
+- Show layers on CLI: `docker image inspect`, `docker hisrtory`, `dive`
 
 ### Apps
 
