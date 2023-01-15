@@ -12,6 +12,7 @@ So many Debian images are so complex and far away from safety and security of `d
 - Official Debian images: https://github.com/debuerreotype/debuerreotype
 - `apt-get install --no-install-recommends --no-install-suggests`
 - Keep no data in the container!
+- Meta data https://github.com/opencontainers/image-spec/blob/main/annotations.md#pre-defined-annotation-keys
 
 ### Parts of the base image
 
